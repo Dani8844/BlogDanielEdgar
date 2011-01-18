@@ -12,9 +12,7 @@ end
 
 
 Given /^an article with the title "([^"]*)" and the content "([^"]*)"$/ do |arg1, arg2|
-  @articulonum3= Article.create(:title=>arg1)
-  @articulonum3.content = arg2
-  
+@articulonum3= Article.create(:title=>arg1, :content=>arg2)
 end
 
 When /^I follow "([^"]*)"$/ do |arg1|
